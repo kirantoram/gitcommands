@@ -1,4 +1,26 @@
+git --version
+
+To signoff on particular user
+git config --global user.name "kiran Toram"
+git config --global user.email "kiran@code.net"
+
+mkdir git-work-flow
+subl .		# launch sublime in current directory
+git init .	# initialises on master branch from scratch 
+git status 	# show all untracked files in staging area
+By default git doesnot track all files, you need to add to staging area using git add 
+git add README.md
+git status
+
+git commit -m "created our first Readme.md"
+git log #shows all the commits
+git diff README.md	#shows all changes done to a particular file
+git show <commitid> # shows what all changes done 
+
+
+
 git Branching
+----------------------------
 - git branch
 - git checkout
 - git checkout -b
@@ -21,3 +43,6 @@ git checkout -b feature/new-feature # new way of creating branch referncing exis
 
 Git Merging & Workflow
 -----------------------
+
+
+git log --oneline --all --graph --decorate
