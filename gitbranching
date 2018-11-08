@@ -50,5 +50,33 @@ git log
 git show 6ea139a
 
 
+GIT: Git Flow Feature Branch and Pushing to Github
+--------------------------------------------------
+git branch
+git flow feature start a-new-feature	#creates feature branch
+git status
+git add -A
+git commit -am "added new feature"
+git checkout develop
+git checkout feature/a-new-feature
 
+Add public key to github to push your code from local machine to gitub automatically
+ssh-keygen -t rsa -C 'kiranimpressario@gmail.com' #creates key value pair
+cd ~/.ssh
+cat id_rsa.pub
+paste in github settings ssh keys
+
+cd ~/Repositories/git-work-flow
+git remote add origin git@github.com:zacksiri/git-work-flow.git
+git remote -v				#Display remote repository configured
+git checkout master			# changes to local master branch
+git push origin master			#pushes local master branch to github repository
+git push origin develop 		# pushes develop branch to repo
+git flow feature publish a-new-feature 	# pushes feature branch to repo
+
+git commit -am " updated the feature"
+git push origin feature/a-new-feature 	#you can use this command as well instead of git flow command 
+
+
+-----------------------
 git log --oneline --all --graph --decorate
