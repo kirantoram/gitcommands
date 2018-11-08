@@ -1,0 +1,23 @@
+git Branching
+- git branch
+- git checkout
+- git checkout -b
+- git commit -am
+
+Each piece of code or feature to a developer
+Isolate code base and merge later
+git branch develop
+git branch		#Displays Branches
+git checkout develop 	#switch to develop from master branch
+git status		#To Display changes done
+git checkout -b feature/
+git commit -am "something new"  # add & commit in one command
+git log 			# Displays no of commits
+
+git checkout master
+git checkout develop
+git checkout -b feature/new-feature # new way of creating branch referncing existing branch ex based on develop
+
+
+Git Merging & Workflow
+-----------------------
