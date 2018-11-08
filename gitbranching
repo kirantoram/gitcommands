@@ -43,6 +43,12 @@ git checkout -b feature/new-feature # new way of creating branch referncing exis
 
 Git Merging & Workflow
 -----------------------
+git branch
+git checkout develop
+git merge feature/new-feature 	#merges feature branch to develop branch
+git log
+git show 6ea139a
+
 
 
 git log --oneline --all --graph --decorate
