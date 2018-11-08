@@ -78,5 +78,11 @@ git commit -am " updated the feature"
 git push origin feature/a-new-feature 	#you can use this command as well instead of git flow command 
 
 
+Pull Request, Merge and uplaod to develop branch
+------------------------------------------------
+git status    #check if any untracked or uncommited files 
+git flow feature finish a-new-feature
+git push origin develop
+
 -----------------------
 git log --oneline --all --graph --decorate
